@@ -1,0 +1,63 @@
+header{
+    max-width: 100%;
+    nav{
+        ul{
+            li{
+                a{
+                    color:white !important;
+                    animation: fadeInMenu 1s;
+                }
+                a:hover{
+                    transform: scale(1.2);
+                    transition: transform 1s ease-in-out;
+                }
+            }
+        }
+    }
+}
+.mainIndex{
+    animation: fadeInMenu 1s;
+    background-image: $backgroundImage;
+    margin: 0px !important;
+    padding: 0px !important;
+    .dvText{
+        cursor: pointer;
+        background-color: $backgroundColorTextA;
+        border-radius: 10px;
+        padding: 50px;
+        height: 200px;
+    }
+    .dvText:hover section h2,.dvText:hover section h3{
+        display: none;
+    }
+    .dvText:hover section:after{
+        content: 'Ver mas Proyectos';
+        animation: fadeInMenu 1s;
+    }
+    .dvText section h2, .dvText section h3{
+        
+        animation: fadeInMenu 1s;
+    }
+    section{
+        font-size: 50px;
+    }
+}
+
+footer{
+    p{
+        margin-bottom:0px !important
+    }
+    .imgColum{
+        img{
+            margin-left: 5px;
+            width: 20px;
+        }
+        img:hover{
+            transform: rotate(10deg) scale(1.5);
+            transition: transform 1s;
+        }
+    }
+    
+    margin: 0px !important;
+    padding: 0px !important;
+}

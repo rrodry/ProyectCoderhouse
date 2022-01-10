@@ -1,0 +1,139 @@
+header {
+  max-width: 100%;
+}
+
+header nav ul li a {
+  color: white !important;
+  -webkit-animation: fadeInMenu 1s;
+          animation: fadeInMenu 1s;
+}
+
+header nav ul li a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.mainIndex {
+  -webkit-animation: fadeInMenu 1s;
+          animation: fadeInMenu 1s;
+  background-image: url(../img/mainImg.jpg);
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.mainIndex .dvText {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.562);
+  border-radius: 10px;
+  padding: 50px;
+  height: 200px;
+}
+
+.mainIndex .dvText:hover section h2, .mainIndex .dvText:hover section h3 {
+  display: none;
+}
+
+.mainIndex .dvText:hover section:after {
+  content: 'Ver mas Proyectos';
+  -webkit-animation: fadeInMenu 1s;
+          animation: fadeInMenu 1s;
+}
+
+.mainIndex .dvText section h2, .mainIndex .dvText section h3 {
+  -webkit-animation: fadeInMenu 1s;
+          animation: fadeInMenu 1s;
+}
+
+.mainIndex section {
+  font-size: 50px;
+}
+
+footer {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+footer p {
+  margin-bottom: 0px !important;
+}
+
+footer .imgColum img {
+  margin-left: 5px;
+  width: 20px;
+}
+
+footer .imgColum img:hover {
+  -webkit-transform: rotate(10deg) scale(1.5);
+          transform: rotate(10deg) scale(1.5);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.mainAboutMe div div div img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.mainAboutMe div .imgRedesPrese img {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
+
+@-webkit-keyframes imgRedes {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes imgRedes {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .mainIndex section h2, .mainIndex section h3 {
+    font-size: 15px;
+  }
+}
+
+main {
+  height: 100vh;
+}
+/*# sourceMappingURL=stylesI.css.map */
