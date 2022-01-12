@@ -3,7 +3,14 @@
     padding:0px
 }
 .mainAboutMe{
+    height: 100vh;
     .colPresen{
+        .imgPerfil{
+            img{
+                width: 250px;
+                height: 200px;
+            }
+        }
         .logosPresen{
             img{
                 width: 30px;
@@ -19,12 +26,10 @@
     }
     .colContent{
         background-color: rgb(182, 182, 182);
-        .contImagen{
-            img{
-                width: 95%;
-            }
-        }
         .imgCodes{
+            .dvCodes{
+                border-radius: 10px;
+            }
             flex-wrap: wrap;
             img{
                 width: 100px;
@@ -34,7 +39,24 @@
             img:hover{
                 cursor:pointer;
                 transition: transform 0.5s;
-                transform: scale(1.2);
+            }
+        }
+        .contentDescp{
+            .dvDescp{
+                border-radius: 5px;
+                input{
+                    padding: 15px 20px 15px 20px;
+                    background:none;
+                    border: none;
+                    background-color:rgb(0, 0, 0);
+                    border-radius: 5px;
+                    color: white;
+                }
+                input:hover{
+                    transition: transform 0.5s;
+                    transform: $trasformScale;
+                }
+
             }
         }
     }

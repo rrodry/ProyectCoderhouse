@@ -86,6 +86,15 @@ footer .imgColum img:hover {
   padding: 0px;
 }
 
+.mainAboutMe {
+  height: 100vh;
+}
+
+.mainAboutMe .colPresen .imgPerfil img {
+  width: 250px;
+  height: 200px;
+}
+
 .mainAboutMe .colPresen .logosPresen img {
   width: 30px;
   margin-right: 10px;
@@ -100,13 +109,13 @@ footer .imgColum img:hover {
   background-color: #b6b6b6;
 }
 
-.mainAboutMe .colContent .contImagen img {
-  width: 95%;
-}
-
 .mainAboutMe .colContent .imgCodes {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.mainAboutMe .colContent .imgCodes .dvCodes {
+  border-radius: 10px;
 }
 
 .mainAboutMe .colContent .imgCodes img {
@@ -117,6 +126,26 @@ footer .imgColum img:hover {
 
 .mainAboutMe .colContent .imgCodes img:hover {
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.mainAboutMe .colContent .contentDescp .dvDescp {
+  border-radius: 5px;
+}
+
+.mainAboutMe .colContent .contentDescp .dvDescp input {
+  padding: 15px 20px 15px 20px;
+  background: none;
+  border: none;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+}
+
+.mainAboutMe .colContent .contentDescp .dvDescp input:hover {
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
