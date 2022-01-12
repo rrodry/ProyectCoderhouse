@@ -1,4 +1,5 @@
-@import '_variables.scss','_styles.scss','_aboutMe.scss','_keyframes.scss','_medias.scss';
-main{
-    height: 100vh;
+*{
+    margin:0px;
+    padding: 0px;
 }
+@import '_variables.scss','_styles.scss','_aboutMe.scss','_keyframes.scss','_medias.scss';

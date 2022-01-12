@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 header {
   max-width: 100%;
 }
@@ -53,6 +58,7 @@ header nav ul li a:hover {
 }
 
 footer {
+  height: 50px;
   margin: 0px !important;
   padding: 0px !important;
 }
@@ -75,16 +81,48 @@ footer .imgColum img:hover {
   transition: transform 1s, -webkit-transform 1s;
 }
 
-.mainAboutMe div div div img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.mainAboutMe div .imgRedesPrese img {
-  width: 50px;
-  height: 50px;
-  margin-left: 30px;
+.mainAboutMe .colPresen .logosPresen img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.mainAboutMe .colPresen .logoPrincipal img {
+  border-radius: 50%;
+}
+
+.mainAboutMe .colContent {
+  background-color: #b6b6b6;
+}
+
+.mainAboutMe .colContent .contImagen img {
+  width: 95%;
+}
+
+.mainAboutMe .colContent .imgCodes {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainAboutMe .colContent .imgCodes img {
+  width: 100px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.mainAboutMe .colContent .imgCodes img:hover {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @-webkit-keyframes imgRedes {
@@ -131,9 +169,5 @@ footer .imgColum img:hover {
   .mainIndex section h2, .mainIndex section h3 {
     font-size: 15px;
   }
-}
-
-main {
-  height: 100vh;
 }
 /*# sourceMappingURL=stylesI.css.map */
