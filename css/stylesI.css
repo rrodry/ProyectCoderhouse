@@ -86,13 +86,15 @@ footer .imgColum img:hover {
   padding: 0px;
 }
 
-.mainAboutMe {
-  height: 100vh;
+.mainAboutMe .colPresen {
+  z-index: 1;
 }
 
 .mainAboutMe .colPresen .imgPerfil img {
   width: 250px;
   height: 200px;
+  -webkit-animation: perfilPic 0.5s;
+          animation: perfilPic 0.5s;
 }
 
 .mainAboutMe .colPresen .logosPresen img {
@@ -110,6 +112,9 @@ footer .imgColum img:hover {
 }
 
 .mainAboutMe .colContent .imgCodes {
+  z-index: 0;
+  -webkit-animation: wLeft 2s;
+          animation: wLeft 2s;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -130,13 +135,23 @@ footer .imgColum img:hover {
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.mainAboutMe .colContent .contentDescp {
+  padding: 20px 0px 20px 10px;
 }
 
 .mainAboutMe .colContent .contentDescp .dvDescp {
-  border-radius: 5px;
+  -webkit-animation: wRigth 2s;
+          animation: wRigth 2s;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .mainAboutMe .colContent .contentDescp .dvDescp input {
+  -webkit-animation: alert 5s infinite;
+          animation: alert 5s infinite;
   padding: 15px 20px 15px 20px;
   background: none;
   border: none;
@@ -146,6 +161,8 @@ footer .imgColum img:hover {
 }
 
 .mainAboutMe .colContent .contentDescp .dvDescp input:hover {
+  -webkit-animation: none;
+          animation: none;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -191,6 +208,102 @@ footer .imgColum img:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes perfilPic {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes perfilPic {
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes wLeft {
+  0% {
+    -webkit-transform: translate(-250px);
+            transform: translate(-250px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes wLeft {
+  0% {
+    -webkit-transform: translate(-250px);
+            transform: translate(-250px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@-webkit-keyframes wRigth {
+  0% {
+    -webkit-transform: translate(250px);
+            transform: translate(250px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes wRigth {
+  0% {
+    -webkit-transform: translate(250px);
+            transform: translate(250px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@-webkit-keyframes alert {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  25% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+  50% {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes alert {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  25% {
+    -webkit-transform: translate(5px);
+            transform: translate(5px);
+  }
+  50% {
+    -webkit-transform: translate(-5px);
+            transform: translate(-5px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
 }
 

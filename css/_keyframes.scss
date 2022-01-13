@@ -14,3 +14,39 @@
         opacity: 1;
     }
 }
+@keyframes perfilPic {
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes wLeft {
+    0%{
+        transform: translate(-250px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes wRigth {
+    0%{
+        transform: translate(250px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes alert {
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(5px);
+    }
+    50%{
+        transform: translate(-5px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}

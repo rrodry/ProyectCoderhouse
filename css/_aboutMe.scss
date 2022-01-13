@@ -3,12 +3,13 @@
     padding:0px
 }
 .mainAboutMe{
-    height: 100vh;
     .colPresen{
+        z-index: 1;
         .imgPerfil{
             img{
                 width: 250px;
                 height: 200px;
+                animation: perfilPic 0.5s;
             }
         }
         .logosPresen{
@@ -27,6 +28,8 @@
     .colContent{
         background-color: rgb(182, 182, 182);
         .imgCodes{
+            z-index: 0;
+            animation: wLeft 2s;
             .dvCodes{
                 border-radius: 10px;
             }
@@ -39,20 +42,25 @@
             img:hover{
                 cursor:pointer;
                 transition: transform 0.5s;
+                transform: $trasformScale;
             }
         }
         .contentDescp{
-            .dvDescp{
-                border-radius: 5px;
+            padding: 20px 0px 20px 10px;
+            .dvDescp{                
+                animation: wRigth 2s;
+                border-radius: 5px 0px 0px 5px;
                 input{
+                    animation: alert 5s infinite;
                     padding: 15px 20px 15px 20px;
                     background:none;
                     border: none;
                     background-color:rgb(0, 0, 0);
-                    border-radius: 5px;
+                    border-radius: 5px ;
                     color: white;
                 }
                 input:hover{
+                    animation: none;
                     transition: transform 0.5s;
                     transform: $trasformScale;
                 }
