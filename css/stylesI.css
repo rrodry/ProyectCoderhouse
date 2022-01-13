@@ -312,4 +312,10 @@ footer .imgColum img:hover {
     font-size: 15px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .mainAboutMe {
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=stylesI.css.map */
