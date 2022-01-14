@@ -26,7 +26,7 @@
         }
     }
     .colContent{
-        background-color: rgb(182, 182, 182);
+        background-color: $backgroundColor;
         .imgCodes{
             z-index: 0;
             animation: wLeft 2s;

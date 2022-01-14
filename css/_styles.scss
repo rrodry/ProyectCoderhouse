@@ -16,30 +16,25 @@ header{
     }
 }
 .mainIndex{
-    animation: fadeInMenu 1s;
-    background-image: $backgroundImage;
-    margin: 0px !important;
-    padding: 0px !important;
     .dvText{
-        cursor: pointer;
-        background-color: $backgroundColorTextA;
-        border-radius: 10px;
-        padding: 50px;
-        height: 200px;
-    }
-    .dvText:hover section h2,.dvText:hover section h3{
-        display: none;
-    }
-    .dvText:hover section:after{
-        content: 'Ver mas Proyectos';
-        animation: fadeInMenu 1s;
-    }
-    .dvText section h2, .dvText section h3{
-        
-        animation: fadeInMenu 1s;
-    }
-    section{
-        font-size: 50px;
+        height: 100vh;
+        .dvImgDescp{
+            img{
+                width: 100%;
+            }
+        }
+        section{
+            background-color: $backgroundColor;
+            input{
+                background: rgb(82, 82, 82);
+                border:none;
+                border-radius: 5px;
+                padding: 5px;
+                width: 130px;
+                color: white;
+                text-align: center;
+            }
+        }
     }
 }
 
