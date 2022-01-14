@@ -16,23 +16,28 @@ header{
     }
 }
 .mainIndex{
-    .dvText{
-        height: 100vh;
-        .dvImgDescp{
-            img{
-                width: 100%;
-            }
-        }
+    height: 100vh;
+    background-color:#17171b !important;
+    .colDvSec{
+        background:linear-gradient( to right , white , #212529 55%, #17171b 90%);
         section{
-            background-color: $backgroundColor;
-            input{
-                background: rgb(82, 82, 82);
-                border:none;
-                border-radius: 5px;
-                padding: 5px;
-                width: 130px;
-                color: white;
-                text-align: center;
+            .dvImgIndex{
+                img{
+                    width: 100%;
+                }
+            }
+            .dvTextIndex{
+                p{
+                    border-radius: 5px;
+                    padding: 48px;
+                }
+                input{
+                    padding: 15px 20px;
+                    border:none;
+                    background-color: black;
+                    color: white;
+                    border-radius: 5px;
+                }
             }
         }
     }
