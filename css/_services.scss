@@ -1,0 +1,17 @@
+.mainServices{
+    .carousel-item{
+        position: relative;
+        height: 30rem;
+        background-repeat: none;
+        background-size: cover;
+        .imgSlide{
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+            right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    }
+}

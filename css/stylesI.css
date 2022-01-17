@@ -34,6 +34,7 @@ header nav ul li a:hover {
 
 .mainIndex .colDvSec section .dvImgIndex img {
   width: 100%;
+  height: 100%;
 }
 
 .mainIndex .colDvSec section .dvTextIndex {
@@ -41,7 +42,7 @@ header nav ul li a:hover {
           animation: wLeft 1s;
 }
 
-.mainIndex .colDvSec section .dvTextIndex p {
+.mainIndex .colDvSec section .dvTextIndex h2 {
   border-radius: 5px;
   padding: 48px;
 }
@@ -207,6 +208,23 @@ footer .imgColum img:hover {
           transform: scale(1.2);
 }
 
+.mainServices .carousel-item {
+  position: relative;
+  height: 30rem;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.mainServices .carousel-item .imgSlide {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 @-webkit-keyframes imgRedes {
   0% {
     -webkit-transform: scale(1);
@@ -349,7 +367,7 @@ footer .imgColum img:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mainIndex .colDvSec {
     background: none;
   }
