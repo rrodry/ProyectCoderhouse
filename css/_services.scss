@@ -14,4 +14,24 @@
             text-align: center;
         }
     }
+    .dvServ{
+        img{
+            width: 100%;
+            max-width: 300px;
+        }
+        .servText{
+            padding: 20px;
+            a{
+                padding: 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .dvServD{
+        img{
+            width: 100%;
+        }
+    }
 }

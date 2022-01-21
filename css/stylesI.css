@@ -225,6 +225,26 @@ footer .imgColum img:hover {
   text-align: center;
 }
 
+.mainServices .dvServ img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.mainServices .dvServ .servText {
+  padding: 20px;
+}
+
+.mainServices .dvServ .servText a {
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mainServices .dvServD img {
+  width: 100%;
+}
+
 @-webkit-keyframes imgRedes {
   0% {
     -webkit-transform: scale(1);
