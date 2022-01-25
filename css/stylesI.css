@@ -22,76 +22,93 @@ header nav ul li a:hover {
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.mainIndex {
-  height: 100vh;
-  background-color: #17171b !important;
+.mainServices .carousel-item {
+  position: relative;
+  height: 30rem;
+  background-repeat: none;
+  background-size: cover;
 }
 
-.mainIndex .colDvSec {
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(55%, #212529), color-stop(90%, #17171b));
-  background: linear-gradient(to right, white, #212529 55%, #17171b 90%);
+.mainServices .carousel-item .imgSlide {
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.mainIndex .colDvSec section .dvImgIndex img {
-  width: 100%;
+.mainServices .splash {
+  position: relative;
+}
+
+.mainServices .splash .imgSplash {
+  position: absolute;
+  z-index: -1;
   height: 100%;
+  -webkit-animation: traslateSplash 1s;
+          animation: traslateSplash 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.mainIndex .colDvSec section .dvTextIndex {
-  -webkit-animation: wLeft 1s;
-          animation: wLeft 1s;
+.mainServices .splash .dvServ img {
+  width: 100%;
+  max-width: 300px;
 }
 
-.mainIndex .colDvSec section .dvTextIndex h2 {
+.mainServices .splash .dvServ .servText {
+  padding: 20px;
+}
+
+.mainServices .splash .dvServ .servText a {
+  padding: 20px;
   border-radius: 5px;
-  padding: 48px;
-}
-
-.mainIndex .colDvSec section .dvTextIndex a {
-  display: inline-block;
-  padding: 15px 20px;
-  border: none;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-}
-
-.mainIndex .colDvSec section .dvTextIndex a:hover {
+  text-decoration: none;
   cursor: pointer;
+}
+
+.mainServices .colRelImg .txtDesing {
+  position: relative;
+}
+
+.mainServices .colRelImg .txtDesing .imgText {
+  width: 100%;
+}
+
+.mainServices .colRelImg .txtDesing .textPos {
+  position: absolute;
+  top: 50px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 300px;
+}
+
+.mainServices .colRelImg .txtDesing .logoLeng {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.mainServices .colRelImg .txtDesing .logoLeng img {
+  width: 100px;
+}
+
+.mainServices .colRelImg .txtDesing .logoLeng img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: 0px 0px 10px white;
-          box-shadow: 0px 0px 10px white;
-}
-
-.mainIndex .colDvSec section .imgRedesIndex {
-  -webkit-animation: wLeft 1s;
-          animation: wLeft 1s;
-}
-
-.mainIndex .colDvSec section .separator {
-  -webkit-animation: wLeft 1s;
-          animation: wLeft 1s;
-}
-
-.mainIndex .colDvSec section .separator img {
-  width: 25px;
-  margin: 5px;
-}
-
-.mainIndex .colDvSec section .separator img:hover {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: 2px 2px 10px white;
-          box-shadow: 2px 2px 10px white;
 }
 
 footer {
@@ -208,43 +225,6 @@ footer .imgColum img:hover {
           transform: scale(1.2);
 }
 
-.mainServices .carousel-item {
-  position: relative;
-  height: 30rem;
-  background-repeat: none;
-  background-size: cover;
-}
-
-.mainServices .carousel-item .imgSlide {
-  position: absolute;
-  bottom: 30px;
-  left: 0px;
-  right: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.mainServices .dvServ img {
-  width: 100%;
-  max-width: 300px;
-}
-
-.mainServices .dvServ .servText {
-  padding: 20px;
-}
-
-.mainServices .dvServ .servText a {
-  padding: 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mainServices .dvServD img {
-  width: 100%;
-}
-
 @-webkit-keyframes imgRedes {
   0% {
     -webkit-transform: scale(1);
@@ -343,41 +323,25 @@ footer .imgColum img:hover {
   }
 }
 
-@-webkit-keyframes alert {
+@-webkit-keyframes traslateSplash {
   0% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
-  }
-  25% {
-    -webkit-transform: translate(5px);
-            transform: translate(5px);
-  }
-  50% {
-    -webkit-transform: translate(-5px);
-            transform: translate(-5px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   100% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
   }
 }
 
-@keyframes alert {
+@keyframes traslateSplash {
   0% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
-  }
-  25% {
-    -webkit-transform: translate(5px);
-            transform: translate(5px);
-  }
-  50% {
-    -webkit-transform: translate(-5px);
-            transform: translate(-5px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
   100% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
   }
 }
 

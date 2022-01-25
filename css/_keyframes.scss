@@ -36,17 +36,11 @@
         transform: translate(0px);
     }
 }
-@keyframes alert {
+@keyframes traslateSplash {
     0%{
-        transform: translate(0px);
-    }
-    25%{
-        transform: translate(5px);
-    }
-    50%{
-        transform: translate(-5px);
+        transform: translateY(100px);
     }
     100%{
-        transform: translate(0px);
+        transform: translateY(200px);
     }
 }
