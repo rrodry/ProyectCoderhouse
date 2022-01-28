@@ -16,6 +16,26 @@ header{
     }
 }
 .mainServices{
+    .modal-Conta{
+        position: fixed;
+        top:0;
+        z-index:4;
+        transition: position 1s;
+        animation:fadeInMenu 1s;
+        .customModal{  
+            width: 100%;  
+            height: 100vh;
+            background-color: rgba($color: #000000, $alpha: 0.5) !important;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .carrouselItemCus{
+        background-size: cover;
+        background-position: center;
+    }
     .carousel-item{
         position: relative;
         height: 30rem;
@@ -37,8 +57,6 @@ header{
             position: absolute;
             z-index: -1;
             height: 100%;
-            animation: traslateSplash 1s;
-            animation-fill-mode: forwards;
         }
         .dvServ{
             img{
@@ -58,12 +76,13 @@ header{
     }
     .colRelImg{
         .txtDesing{
+            overflow: hidden;
             position: relative;
             .imgText{
                 width: 100%;
 
             }
-            .textPos{
+            .textPos,.textPos2{
                 position: absolute;
                 top: 50px;
                 padding: 20px;
@@ -71,9 +90,21 @@ header{
                 border-radius: 0px 5px 5px 0px;
                 margin-left: 0px;
                 margin-right: 0px;
-                width: 300px;
+                width: 20%;
+                cursor:pointer;
             }
-            .logoLeng{
+            .textPos:hover,.textPos2:hover{
+                transform: translateX(-5px);
+                transition: transform 0.5s;
+            }
+            .textPos2:hover{
+                transform: translateX(5px);
+            }
+            .textPos2{
+                border-radius: 5px 0px 0px 5px;
+                right: 0px;
+            }
+            .logoLeng,.logoLeng2{
                 position: absolute;
                 bottom: 0px;
                 margin-left: 0px;
@@ -87,6 +118,25 @@ header{
                     cursor: pointer;
                     transform: scale(1.2);
                     transition: transform 1s;
+                }
+            }
+            
+            .logoLeng2{
+                width: 300px;
+                margin-left: 0px;
+                margin-right: 0px;
+                left: 0px;
+                right: 0px;
+
+                a{
+                    width: 300px;
+                }
+            }
+            .btnPlay{
+                background: none;
+                border: none;
+                svg{
+                    cursor: pointer;
                 }
             }
         }

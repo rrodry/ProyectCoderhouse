@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-fluid m-0 p-0">
-    <header class="m-0 p-0 row bg-dark">
+        <header class="m-0 p-0 row bg-dark">
         <nav class="col">
             <ul class="nav nav-pills justify-content-center">
                 <li class="nav-item p-2 liHoverMain"><a href="#" class="nav-link" aria-current="page">Inicio</a></li>
@@ -20,6 +20,11 @@
         </nav>
     </header>
     <main class="mainServices row m-0 p-0">
+        <div id="modal-Conta" class="col-12 modal-Conta" style="display: none" onclick="modalVideo()" >
+            <div class="customModal p-5">
+                <iframe src="https://www.youtube.com/embed/bmixiVwtDso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
         <div class="col-12 m-0 p-0">
             <div id="controlCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -29,13 +34,12 @@
                           <a href="../pages/contacto.html" class="btn btn-lg btn-primary">Solicita tu presupuesto ahora</a>
                       </div>
                   </div>
-                  <div class="carousel-item" style="background-image:url(../img/Serv_Image_2.jpeg)">
+                  <div class="carousel-item carrouselItemCus" style="background-image:url(../img/Serv_Image_2.jpeg)">
                     <div class="container imgSlide text-light justify-content-center align-items-center">
                         <h2>Conoce mas acerca de mi y mis proyectos</h2>
                         <a href="../pages/aboutme.html" class="btn btn-lg btn-primary">Mas info.</a>
                     </div>
-                </div>
-                </div>
+                    </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#controlCarousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -48,7 +52,7 @@
             </div>
             <div class="col-12 m-0 p-0">
                 <div class="row splash m-0 p-0">
-                    <img src="img/splash.png" alt="splash" class="imgSplash m-0 p-0">
+                    <img src="img/splash2.png" alt="splash" class="imgSplash m-0 p-0">
                 <div class="col-sm-12 col-md-6 col-lg-4 .col-xl-4 .col-xxl-4 d-flex justify-content-center">
                     <div class="dvServ justify-content-center d-flex">
                         <div class="serv">
@@ -87,6 +91,21 @@
                     </div>
                 </div>
             </div>
+            <div class="col-12 m-0 p-0 colRelImg">
+                <div class="txtDesing text-center text-light" id="WebDesingID">
+                    <img src="img/imgMantenimiento.png" class="imgText">
+                    <p class="textPos2">Mantenimiento de servidores, paginas web </p>
+                    <div class="logoLeng2 start-50 translate-middle-x">
+                        <a class="btn btn-lg d-block btn-info mb-2">Solicitar Presupuesto</a>
+                    </div>
+                    <div class="logoLeng3 position-absolute start-50 top-50 translate-middle-x">
+                        <button class="btnPlay" type="button" onclick="modalVideo()"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#cccccc" class="bi bi-play-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                          </svg></button>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer class="row bg-dark text-light">
         <div class="col-5 justify-content-center d-flex m-0 p-0 align-items-center">
@@ -103,5 +122,6 @@
     </footer>
 </div>
 </body>
+<script src="/js/functions.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

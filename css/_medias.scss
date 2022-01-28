@@ -1,15 +1,21 @@
-@media screen and (max-width:609px) {
-    .mainIndex{
-        section h2, section h3{
-            font-size: 15px;
+@media screen and (max-width: 1023px) {
+    .mainServices{
+        .splash{
+            .imgSplash{
+                display: none;
+            }
         }
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .mainIndex{
-        .colDvSec{
-            background:none
+        .colRelImg{
+            .txtDesing{
+                .textPos{
+                    display: none;
+                }
+                .logoLeng{
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
         }
     }
 }

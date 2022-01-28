@@ -22,6 +22,32 @@ header nav ul li a:hover {
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
+.mainServices .modal-Conta {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  -webkit-transition: position 1s;
+  transition: position 1s;
+  -webkit-animation: fadeInMenu 1s;
+          animation: fadeInMenu 1s;
+}
+
+.mainServices .modal-Conta .customModal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.mainServices .modal-Conta .customModal iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.mainServices .carrouselItemCus {
+  background-size: cover;
+  background-position: center;
+}
+
 .mainServices .carousel-item {
   position: relative;
   height: 30rem;
@@ -47,10 +73,6 @@ header nav ul li a:hover {
   position: absolute;
   z-index: -1;
   height: 100%;
-  -webkit-animation: traslateSplash 1s;
-          animation: traslateSplash 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .mainServices .splash .dvServ img {
@@ -70,6 +92,7 @@ header nav ul li a:hover {
 }
 
 .mainServices .colRelImg .txtDesing {
+  overflow: hidden;
   position: relative;
 }
 
@@ -77,7 +100,7 @@ header nav ul li a:hover {
   width: 100%;
 }
 
-.mainServices .colRelImg .txtDesing .textPos {
+.mainServices .colRelImg .txtDesing .textPos, .mainServices .colRelImg .txtDesing .textPos2 {
   position: absolute;
   top: 50px;
   padding: 20px;
@@ -85,10 +108,30 @@ header nav ul li a:hover {
   border-radius: 0px 5px 5px 0px;
   margin-left: 0px;
   margin-right: 0px;
-  width: 300px;
+  width: 20%;
+  cursor: pointer;
 }
 
-.mainServices .colRelImg .txtDesing .logoLeng {
+.mainServices .colRelImg .txtDesing .textPos:hover, .mainServices .colRelImg .txtDesing .textPos2:hover {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.mainServices .colRelImg .txtDesing .textPos2:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.mainServices .colRelImg .txtDesing .textPos2 {
+  border-radius: 5px 0px 0px 5px;
+  right: 0px;
+}
+
+.mainServices .colRelImg .txtDesing .logoLeng, .mainServices .colRelImg .txtDesing .logoLeng2 {
   position: absolute;
   bottom: 0px;
   margin-left: 0px;
@@ -97,11 +140,11 @@ header nav ul li a:hover {
   right: 0px;
 }
 
-.mainServices .colRelImg .txtDesing .logoLeng img {
+.mainServices .colRelImg .txtDesing .logoLeng img, .mainServices .colRelImg .txtDesing .logoLeng2 img {
   width: 100px;
 }
 
-.mainServices .colRelImg .txtDesing .logoLeng img:hover {
+.mainServices .colRelImg .txtDesing .logoLeng img:hover, .mainServices .colRelImg .txtDesing .logoLeng2 img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -109,6 +152,27 @@ header nav ul li a:hover {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+}
+
+.mainServices .colRelImg .txtDesing .logoLeng2 {
+  width: 300px;
+  margin-left: 0px;
+  margin-right: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.mainServices .colRelImg .txtDesing .logoLeng2 a {
+  width: 300px;
+}
+
+.mainServices .colRelImg .txtDesing .btnPlay {
+  background: none;
+  border: none;
+}
+
+.mainServices .colRelImg .txtDesing .btnPlay svg {
+  cursor: pointer;
 }
 
 footer {
@@ -345,15 +409,15 @@ footer .imgColum img:hover {
   }
 }
 
-@media screen and (max-width: 609px) {
-  .mainIndex section h2, .mainIndex section h3 {
-    font-size: 15px;
+@media screen and (max-width: 1023px) {
+  .mainServices .splash .imgSplash {
+    display: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .mainIndex .colDvSec {
-    background: none;
+  .mainServices .colRelImg .txtDesing .textPos {
+    display: none;
+  }
+  .mainServices .colRelImg .txtDesing .logoLeng img {
+    width: 30px;
   }
 }
 
