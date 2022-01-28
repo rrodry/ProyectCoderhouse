@@ -172,6 +172,8 @@ header nav ul li a:hover {
 }
 
 .mainServices .colRelImg .txtDesing .btnPlay svg {
+  width: 52px;
+  height: 52px;
   cursor: pointer;
 }
 
@@ -409,11 +411,17 @@ footer .imgColum img:hover {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .mainServices .colRelImg .txtDesing .logoLeng3 {
+    top: 20% !important;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .mainServices .splash .imgSplash {
     display: none;
   }
-  .mainServices .colRelImg .txtDesing .textPos {
+  .mainServices .colRelImg .txtDesing .textPos, .mainServices .colRelImg .txtDesing .textPos2 {
     display: none;
   }
   .mainServices .colRelImg .txtDesing .logoLeng img {
